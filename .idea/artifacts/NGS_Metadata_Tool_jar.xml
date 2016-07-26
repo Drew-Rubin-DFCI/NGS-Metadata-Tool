@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NGS Metadata Tool:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NGS_Metadata_Tool_jar</output-path>
+    <root id="archive" name="NGS Metadata Tool.jar">
+      <element id="module-output" name="NGS Metadata Tool" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/xmlbeans-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.14/poi-3.14-20160307.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.14/poi-ooxml-3.14-20160307.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.14/poi-examples-3.14-20160307.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.14/poi-excelant-3.14-20160307.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.14/poi-scratchpad-3.14-20160307.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.14/poi-ooxml-schemas-3.14-20160307.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

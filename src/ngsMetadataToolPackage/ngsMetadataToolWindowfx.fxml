@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane fx:id="node" alignment="center" hgap="10" prefHeight="385.0" prefWidth="439.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ngsMetadataToolPackage.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="437.0" prefWidth="439.0" />
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="439.0">
+         <children>
+            <Button fx:id="populate" layoutX="153.0" layoutY="347.0" mnemonicParsing="false" onAction="#populateButtonHandler" text="Populate Excel File" />
+            <Button fx:id="chooseFiles" layoutX="8.0" layoutY="50.0" mnemonicParsing="false" onAction="#fileChooserButtonHandler" text="Choose files..." />
+            <RadioButton fx:id="rnaSeq" layoutX="221.0" layoutY="319.0" mnemonicParsing="false" text="RNA-seq">
+               <toggleGroup>
+                  <ToggleGroup fx:id="sequenceType" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="chipSeq" layoutX="221.0" layoutY="298.0" mnemonicParsing="false" selected="true" text="ChIP-seq" toggleGroup="$sequenceType" />
+            <ListView fx:id="fileList" layoutX="8.0" layoutY="86.0" prefHeight="145.0" prefWidth="424.0" />
+            <Text layoutX="14.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Person:" />
+            <Text layoutX="220.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project:" />
+            <Text layoutX="14.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancer Type:" />
+            <TextField fx:id="person" layoutX="12.0" layoutY="264.0" prefHeight="27.0" prefWidth="199.0" />
+            <TextField fx:id="project" layoutX="220.0" layoutY="264.0" prefHeight="27.0" prefWidth="199.0" />
+            <TextField fx:id="cancerType" layoutX="12.0" layoutY="308.0" prefHeight="27.0" prefWidth="199.0" />
+            <Text layoutX="10.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next Generation Sequencing Metadata Tool">
+               <font>
+                  <Font name="Helvetica Neue UltraLight" size="24.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="singleEnd" layoutX="320.0" layoutY="298.0" mnemonicParsing="false" selected="true" text="Single end">
+               <toggleGroup>
+                  <ToggleGroup fx:id="endType" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="pairedEnd" layoutX="320.0" layoutY="319.0" mnemonicParsing="false" text="Paired end" toggleGroup="$endType" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
