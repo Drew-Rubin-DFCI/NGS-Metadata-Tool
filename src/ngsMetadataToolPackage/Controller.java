@@ -86,16 +86,7 @@ public class Controller {
 
         // Allows for selecting multiple files
         listOfFiles = fileChooser.showOpenMultipleDialog(populate.getScene().getWindow());
-        /*
-        if (listOfFiles != null) {
-            for (File file : listOfFiles) {
-                //openFile(file);
-                //listOfFiles.add(file);
-                System.out.println("WORKS");
-            }
-        }
-        */
-        //List<String> filesStringList = new ArrayList<String>();
+
         if(listOfFiles != null) {
             for (File file : listOfFiles){
                 System.out.println(file.getName());
@@ -106,11 +97,6 @@ public class Controller {
 
 
 
-        //System.out.println("==> For Loop Example.");
-        //for (int i = 0; i < listOfFiles.size(); i++) {
-        //    System.out.println(listOfFiles.get(i));
-        //}
-        //listFiles();
 
     }
     //Lists the file names in the ListView

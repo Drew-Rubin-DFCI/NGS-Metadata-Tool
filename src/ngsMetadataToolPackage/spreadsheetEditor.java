@@ -66,25 +66,9 @@ public class spreadsheetEditor {
             dataToBeAdded.put(Integer.toString(rowIteratorFor), new Object[]{"", fileNameList.get(i),
                     sdf.format(files.get(i).lastModified()).toString(), person, project, "", "", "", "", "", cancerType,
                     "", "", "", "", (files.get(i).getParent()).toString(), "", endType, ""});
-            //System.out.println("Loop 1");
         }
         System.out.println(dataToBeAdded.toString());
         //Add information to spreadsheet
-        /*
-        int stringCounter = 0;
-        while(rowIterator.hasNext()){
-            row = (XSSFRow) rowIterator.next();
-            Iterator < Cell > cellIterator = row.cellIterator();
-            while ( cellIterator.hasNext())
-            {
-                Cell cell = cellIterator.next();
-                cell.setCellValue(fileNameList.get(stringCounter));
-            }
-            stringCounter++;
-            System.out.println();
-        }
-        */
-
         Set< String > keyid = dataToBeAdded.keySet();
         int rowid = totalRowCounter-1;
         System.out.println("Total row count: " + totalRowCounter);
